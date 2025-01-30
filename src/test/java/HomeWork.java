@@ -39,7 +39,8 @@ public class HomeWork {
         //by class
         WebElement el5 = wd.findElement(By.cssSelector(".container"));
         WebElement el = wd.findElement(By.xpath("//*[@class='container']"));
-
+        WebElement el10 = wd.findElement(By.xpath("//*[@class='login_login__3EHKB']"));
+        WebElement el11 = wd.findElement(By.xpath("//*[@class='navbar-component_nav__1X_4m']"));
         //by id
         WebElement el6 = wd.findElement(By.cssSelector("#root"));
         WebElement el1 = wd.findElement(By.xpath("//*[@id = 'root']"));
