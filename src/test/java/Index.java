@@ -28,6 +28,30 @@ public class Index {
 
         WebElement form = wd.findElement(By.tagName("form"));
         WebElement form1 = wd.findElement(By.cssSelector("form"));
+        //by class
+        WebElement div = wd.findElement(By.className("container"));
+        WebElement div1 = wd.findElement(By.cssSelector(".container"));
+
+        List<WebElement> a_list = wd.findElements(By.className("nav-item"));
+        List<WebElement> a_list1 = wd.findElements(By.cssSelector(".nav-item"));
+
+
+        //by id
+        WebElement nav = wd.findElement(By.id("nav"));
+        WebElement nav1 = wd.findElement(By.cssSelector("#nav"));
+
+        WebElement form2 = wd.findElement(By.id("form1"));
+        WebElement form3 = wd.findElement(By.cssSelector("#form1"));
+
+        //by attribute
+        WebElement inputEmail = wd.findElement(By.cssSelector("[placeholder = 'Type your name']"));
+        //start
+        WebElement inputEmail1 = wd.findElement(By.cssSelector("[placeholder ^= 'Type']"));
+        //end
+        WebElement inputEmail2 = wd.findElement(By.cssSelector("[placeholder $= 'name']"));
+        //contains
+        WebElement inputEmail3 = wd.findElement(By.cssSelector("[placeholder *= 'your']"));
+
     }
 
 }
